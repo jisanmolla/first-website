@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>JISAN MOLLA-Welcome in JISAN FNC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="images/jisan.jpg" />
+</head>
+ <body>
+   <div class="hero">
+
+     <div class="formm-box">
+	   <div class="buttton-box">
+	     <div id="btn"></div>
+	     <button type="button" class="togglle-btn" onclick="login()">Log In</button>
+	     <button type="button" class="togglle-btn" onclick="register()">Register</button>
+	   </div>
+	   <div class="sociall-icon">
+	   <a href="https://www.facebook.com/jisan.molla.775" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+	     <a href="https://www.youtube.com/channel/UC1b-TyqHIbuwEhzMbW8gjcw?view_as=subscriber" target="_blank"><i class="fa fa-youtube-play"></i></a>
+	     <a href="https://www.instagram.com/jisan_molla24/"  title="my instagram ID" target="_blank"><i class="fa fa-instagram"></i></a>
+	   </div>
+	   <form id="login" class="inputt-group">
+	     <i class="fa fa-user-o"></i><input type="text" class="input-feildd" placeholder="User Id" required/>
+	     <i class="fa fa-lock"></i><input type="password" class="input-feildd" placeholder="Enter Password" required/>
+	     <input type="checkbox" class="chech-box"><span>Remember Password</span>
+		 <button type="submit" class="submit-btn">Log in</button>
+	   </form>
+	   	<form id="register" class="inputt-group">
+	       <i class="fa fa-user-o"></i><input type="text" class="input-feildd" placeholder="User Id" required/>
+	       <i class="fa fa-envelope-o"></i><input type="email" class="input-feildd" placeholder="Email Id" required/>
+	       <i class="fa fa-lock"></i> <input type="password" class="input-feildd" placeholder="Enter Password" required/>
+	       <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+		   <button type="submit" class="submit-btn">Register</button>
+	    </form>	
+	 </div>
+   </div>
+
+<script type="text/javascript">
+var x = document.querySelector("#login");
+var y = document.querySelector("#register");
+var z = document.querySelector("#btn");
+function register(){
+	x.style.left = "-400px"
+	y.style.left = "50px"
+	z.style.left = "110px"
+}
+var x = document.querySelector("#login");
+var y = document.querySelector("#register");
+var z = document.querySelector("#btn");
+
+function login(){
+	x.style.left = "50px"
+	y.style.left = "450px"
+	z.style.left = "0px"
+}
+</script>
+ </body>
+</html>
